@@ -18,6 +18,9 @@ const formatTitle = computed(() => {
   }
   return slugify(props.title)
 })
+const asd = () => {
+  console.log(123)
+}
 
 const svg = computed(() => {
   if (typeof props.icon === 'object') return props.icon.svg
@@ -31,15 +34,15 @@ const svg = computed(() => {
       <div class="box-header">
         <div v-if="svg" class="icon" v-html="svg"></div>
         <div v-else-if="icon && typeof icon === 'string'" class="icon">
-          <img
-            :src="withBase(icon)"
-            :alt="title"
-            onerror="this.parentElement.style.display='none'"
-          />
+          <img :src="withBase(icon)" :alt="title" onerror="this.parentElement.style.display='none'" />
         </div>
-        <h5 v-if="title" :id="formatTitle" class="title">{{ title }}</h5>
+        <h5 v-if="title" :id="formatTitle" class="title">
+          {{ title }}
+        </h5>
       </div>
-      <p v-if="desc" class="desc">{{ desc }}</p>
+      <p v-if="desc" class="desc">
+        {{ desc }}
+      </p>
     </article>
   </a>
 </template>

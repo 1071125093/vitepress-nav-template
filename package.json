@@ -15,28 +15,22 @@
     "url": "git+https://github.com/maomao1996/vitepress-nav-template.git"
   },
   "author": "maomao1996 <1714487678@qq.com>",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/maomao1996/vitepress-nav-template/issues"
   },
   "homepage": "https://github.com/maomao1996/vitepress-nav-template#readme",
   "devDependencies": {
-    "@femm/prettier": "^1.0.2",
-    "@femm/verify-commit": "^1.0.1",
+    "@femm/prettier": "^1.1.0",
     "@mdit-vue/shared": "^0.12.0",
     "@types/node": "^18.16.3",
+    "@xj-monorepo/prettier": "^1.1.2",
     "cross-env": "^7.0.3",
-    "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
     "sass": "^1.58.3",
     "vitepress": "1.0.0-alpha.48",
     "vue": "^3.2.47"
   },
-  "prettier": "@femm/prettier",
-  "lint-staged": {
-    "*.{js,jsx,tsx,vue,css,scss,less,md,json}": [
-      "prettier --write"
-    ]
-  }
+  "prettier": "@xj-monorepo/prettier",
+  "eslintConfig": {}
 }
